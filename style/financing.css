@@ -1,0 +1,111 @@
+.financing__top{
+    background: var(--blue-black);
+    margin-bottom: 140px;
+}
+.financing__img-wrap{
+    background: none;
+    padding: 0;
+}
+.financing__top-content .about__paragraph{
+    color: var(--white);
+}
+.financing__top-content .blue-title{
+    color: var(--white);
+}
+.works__bottom{
+    display: grid;
+    grid-template-columns: repeat(3, minmax(360px, 1fr));
+    gap: 40px;
+}
+.financing__card{
+    margin-bottom: 140px;
+    background: var(--blue-black);
+    border-radius: 30px 30px 30px 30px;
+}
+.financing__card-content{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: var(--white);
+    padding: 40px 40px 57px 40px;
+    
+}
+.last-card{
+    padding-bottom: 40px;
+}
+
+.financing__card-title{
+    margin: 0 auto;
+    font-size: 24px;
+    font-weight: 700;
+    line-height: normal;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+}
+.choose__section{
+    margin-bottom: 140px;
+}
+.choose__wrapper{
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+.call__wrap{
+    display: flex;
+    align-items: center;
+    padding: 60px;
+    border-radius: 30px;
+    background: var(--blue-black);
+    justify-content: space-between;
+}
+.call-title{
+    font-size: 24px;
+    color: var(--white);
+    max-width: 577px;
+}
+.call-content{
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: space-between;
+    gap: 20px;
+    max-width: 208px;
+    width: 100%;
+    color: var(--white);
+}
+.call__btn{
+    padding: 10px 40px;
+    max-width: 208px;
+    width: 100%;
+    
+}
+.choose__wrap{
+    display: grid;
+    grid-template-columns: repeat(2, minmax(560px, 1fr));
+    gap: 40px;
+}
+.choose-content{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 60px 100px;
+    width: 100%;
+    gap: 30px;
+    background: #F4F7FF;
+    mix-blend-mode: multiply;
+    border-radius: 30px;
+}
+.choose-btn{
+    padding: 10px 40px;
+    max-width: 149px;
+    width: 100%;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: normal;
+    text-transform: uppercase;
+}
+.choose-content:hover{
+    transform: scale(1.1);
+    transition: .3s ease;
+}
