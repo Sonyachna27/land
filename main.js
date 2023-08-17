@@ -122,3 +122,17 @@ inputs.forEach((input) => {
   });
 });
 
+
+
+
+
+document.addEventListener('DOMContentLoaded', function() {
+   
+  const menuBtn = document.querySelector('.menuBtns');
+
+      menuBtn.addEventListener('click', () => {
+        console.log('dsakjhkj');
+          document.body.classList.toggle('open');
+      });
+  }
+);
