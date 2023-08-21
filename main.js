@@ -1,14 +1,37 @@
+
+// function loadHeader() {
+//   var xhr = new XMLHttpRequest();
+//     xhr.open('GET', 'header.html', true);
+//   xhr.onreadystatechange = function() {
+//       if (xhr.readyState === 4 && xhr.status === 200) {
+//           document.getElementById('header-container').innerHTML = xhr.responseText;
+          
+//         }
+//   };
+//   xhr.send();
+// }
+// document.addEventListener('DOMContentLoaded', function() {
+//   const menuBtn = document.querySelector('.menuBtns');
+//   menuBtn.addEventListener('click', () => {
+//       document.body.classList.toggle('open');
+//   });
+//   }
+// );
+
 function loadHeader() {
   var xhr = new XMLHttpRequest();
   xhr.open('GET', 'header.html', true);
   xhr.onreadystatechange = function() {
       if (xhr.readyState === 4 && xhr.status === 200) {
           document.getElementById('header-container').innerHTML = xhr.responseText;
+          const menuBtn = document.querySelector('.menuBtns');
+          menuBtn.addEventListener('click', () => {
+              document.body.classList.toggle('open');
+          });
       }
   };
   xhr.send();
 }
-
 function loadFooter() {
   var xhr = new XMLHttpRequest();
   xhr.open('GET', 'footer.html', true);
@@ -41,6 +64,7 @@ function loadFaq() {
   };
   xhr.send();
 }
+
 loadHeader();
 loadFaq();
 loadBook();
@@ -50,7 +74,7 @@ loadFooter();
 var swiper = new Swiper(".mySwiper", {
   slidesPerView: 6,
   spaceBetween: 40,
-    loop: false,
+    loop: true,
     navigation: {
       nextEl: ".swiper-button-next",
       prevEl: ".swiper-button-prev",
@@ -73,14 +97,18 @@ var swiper = new Swiper(".mySwiper", {
       990: {
         slidesPerView: 3,
         spaceBetween: 20,
-        loop: false,
+      }, 
+      1110: {
+        slidesPerView: 6,
+        spaceBetween: 40,
+        
       }, 
     }
   });
   var swiper2 = new Swiper(".mySwiper2", {
     direction: 'horizontal',
     
-    loop: false,
+    loop: true,
     navigation: {
         nextEl: ".swiper-button-next2",
         prevEl: ".swiper-button-prev2",
@@ -93,8 +121,6 @@ var swiper = new Swiper(".mySwiper", {
     slidesPerView: 2,
     spaceBetween: 40,
     breakpoints: {
-    
-      
       480: {
         slidesPerView: 2,
         spaceBetween: 20
@@ -106,6 +132,10 @@ var swiper = new Swiper(".mySwiper", {
       },
       990: {
         slidesPerView: 3,
+        spaceBetween: 20
+      },
+      1110: {
+        slidesPerView: 4,
         spaceBetween: 20
       },
      },
@@ -123,16 +153,3 @@ inputs.forEach((input) => {
 });
 
 
-
-
-
-document.addEventListener('DOMContentLoaded', function() {
-   
-  const menuBtn = document.querySelector('.menuBtns');
-
-      menuBtn.addEventListener('click', () => {
-        console.log('dsakjhkj');
-          document.body.classList.toggle('open');
-      });
-  }
-);
