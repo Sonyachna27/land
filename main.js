@@ -90,13 +90,13 @@ var swiper = new Swiper(".mySwiper", {
         spaceBetween: 30
       },
       
-      640: {
+      768: {
         slidesPerView: 4,
-        spaceBetween: 40
+        spaceBetween: 20
       },
       990: {
-        slidesPerView: 3,
-        spaceBetween: 20,
+        slidesPerView: 4,
+        spaceBetween: 40,
       }, 
       1110: {
         slidesPerView: 6,
@@ -118,25 +118,31 @@ var swiper = new Swiper(".mySwiper", {
         type: 'bullets',
         clickable: true,
     },
-    slidesPerView: 2,
+    slidesPerView: 4,
     spaceBetween: 40,
     breakpoints: {
-      480: {
+      320: {
         slidesPerView: 2,
         spaceBetween: 20
       },
       
-      640: {
+      520: {
+        slidesPerView: 2,
+        spaceBetween: 20
+      },
+      
+      768: {
         slidesPerView: 3,
         spaceBetween: 20
       },
       990: {
         slidesPerView: 3,
-        spaceBetween: 20
-      },
+        spaceBetween: 40,
+      }, 
       1110: {
-        slidesPerView: 4,
-        spaceBetween: 20
+        slidesPerView: 6,
+        spaceBetween: 40,
+        
       },
      },
     mousewheel: true,
