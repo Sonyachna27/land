@@ -1075,7 +1075,7 @@ color: var(--orange);
 
 .icon{
     position: absolute;
-    width: 26.67px;
+    width: 15.67px;
     height: 3px;
     background-color: var(--white);
     top: 0;
@@ -1083,9 +1083,9 @@ color: var(--orange);
 .icon-left{
     transition-duration: 0.5s;
     position: absolute;
-    width: 26.67px;
+    width: 15.67px;
     height: 3px;
-    top: 30px;
+    top: 15px;
     background-color: var(--white);
     left: 0px;
 }
@@ -1093,66 +1093,72 @@ color: var(--orange);
 .icon-right{
     transition-duration: 0.5s;
     position: absolute;
-    width: 26.67px;
+    width: 15.67px;
     height: 3px;
-    top: 30px;
+    top: 15px;
     background-color: var(--white);
-    left: 26.67px;
+    left: 15.67px;
 }
 
 .icon-right::before{
     transition-duration: 0.5s;
     position: absolute;
-    width: 26.67px;
+    width: 15.67px;
     height: 3px;
     background-color: var(--white);
     content: "";
-    top: -20px;
+    top: -10px;
 }
 .icon-left::before{
     transition-duration: 0.5s;
     position: absolute;
-    width: 26.67px;
+    width: 15.67px;
     height: 3px;
     background-color: var(--white);
     content: "";
-    top: -20px;
+    top: -10px;
 }
 
 .icon-right::after{
     transition-duration: 0.5s;
     position: absolute;
-    width: 26.67px;
+    width: 15.67px;
     height: 3px;
     background-color: var(--white);
     content: "";
-    top: 20px;
+    top: 10px;
 }
 .icon-left::after{
         transition-duration: 0.5s;
         position: absolute;
-        width: 26.67px;
+        width: 15.67px;
         height: 3px;
         background-color: var(--white);
         content: "";
-        top: 20px;
+        top: 10px;
 }
 .open .icon-left,
 .open .icon-right{
     transition-duration: 0.5s;
     background: transparent;
 }
-.open .icon-left::before{
-    transform: rotateZ(46deg) scaleX(1.4) translate(5px, 5px);
+.open .icon-left::before {
+    transform: rotateZ(46deg) scaleX(1.4) translate(5px, -2px);
 }
-.open .icon-left::after{
-    transform: rotateZ(-46deg) scaleX(1.4) translate(4px, -4px);
+.open .icon-left::after {
+    transform: rotateZ(-46deg) scaleX(1.4) translate(4px, 4px);
 }
-.open .icon-right::before{
-    transform: rotateZ(-46deg) scaleX(1.4) translate(-4px, 4px);
+/* .open .icon-right::before{
+    transform: rotateZ(-46deg) scaleX(1.4) translate(-1px, -1px);
 }
 .open .icon-right::after{
-    transform: rotateZ(46deg) scaleX(1.4) translate(-4px, -4px);
+    transform: rotateZ(46deg) scaleX(1.4) translate(-2px, -2px);
+} */
+.open .icon-right::before {
+    transform: rotateZ(-46deg) scaleX(1.4) translate(0px, 6px);
+}
+.open .icon-right::after {
+    transform: rotateZ(46deg) scaleX(1.4) translate(2px, -4px);
 }
 .advantages__block-text {
     
