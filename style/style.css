@@ -1299,5 +1299,8 @@ color: var(--orange);
     .open .adaptive-nav .nav__link{
         font-size: 30px;
     }
+    .about__btn {
+        padding: 15px 40px;
+    }
 }
 }
