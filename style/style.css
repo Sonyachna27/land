@@ -1258,8 +1258,20 @@ color: var(--orange);
     h2 span{
         font-size: 25px;
     }
+    .top__section{
+        border-radius: 0px 0px 40px 40px;
+    }
     .top__wrapper {
         padding: 196px 0;
+    }
+    .about__title {
+        font-size: 25px;
+    }
+    .about__title span{
+        font-size: 25px;
+    }
+    .advantages__block{
+        border-radius: 40px;
     }
     .models__wrapper{
         padding: 70px 0;
@@ -1289,6 +1301,7 @@ color: var(--orange);
     }
     .services {
         margin-bottom: 70px;
+        border-radius: 40px;
     }
     .services__wrapper {
         padding: 70px 0;
@@ -1299,8 +1312,22 @@ color: var(--orange);
     .open .adaptive-nav .nav__link{
         font-size: 30px;
     }
+    .top__btn{
+        max-width: 100%;
+    }
+    .about__img-wrap {
+        padding: 75px 48px;
+    }
+    .form{
+        padding: 40px 25px;
+        border-radius: 40px;
+    }
+    .consultation__wrap{
+        border-radius: 40px;
+    }
     .about__btn {
         padding: 15px 40px;
+
     }
 }
 }
