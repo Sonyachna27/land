@@ -140,7 +140,7 @@ var swiper = new Swiper(".mySwiper", {
         spaceBetween: 40,
       }, 
       1110: {
-        slidesPerView: 6,
+        slidesPerView: 4,
         spaceBetween: 40,
         
       },

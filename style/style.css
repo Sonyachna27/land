@@ -348,7 +348,7 @@ h1 span{
 }
 .services__wrapper{
     padding: 140px 0;
-    display: grid;
+    display: flex;
     flex-direction: column;
     gap: 60px;
     justify-content: center;
@@ -386,7 +386,9 @@ h1 span{
 }
 .product-img-wrap img{
     max-height: 180px;
-    max-height: 180px;
+    min-height: 180px;
+    max-width: 100%;
+    
 }
 .product-text-wrap{
     display: flex;
