@@ -386,7 +386,7 @@ h1 span{
 }
 .product-img-wrap img{
     max-height: 180px;
-    max-width: 180px;
+    max-height: 180px;
 }
 .product-text-wrap{
     display: flex;
