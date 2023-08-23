@@ -48,9 +48,7 @@ h1 span{
     font-weight: 700;
     color: var(--orange);
 }
-/* section{
-    margin-bottom: 140px;
-} */
+
 .container{
     max-width: 1193px;
     padding: 0 20px;
@@ -65,7 +63,7 @@ h1 span{
     transition: all .3s;
 }
 .btn:hover{
-    background: #00066E;
+    background: transparent;
     border: 1px solid var(--blue);
     color: var(--blue);
 }
@@ -563,16 +561,19 @@ h1 span{
 }
 
 .tab input[type="checkbox"]:checked ~ .tab-content {
-    max-height: 100vh;  
-    padding: 15px 40px; 
-    border-radius: 60px 60px 60px 60px;
+    max-height: 100vh;
+    padding: 65px 40px 20px 40px;
+    border-radius: 25px 25px 30px 30px;
+    margin-top: -50px;
 }
 
 .tab input[type="checkbox"]:checked + label::after {
     transform: rotate(180deg);
     transition: transform 0.3s ease;
 }
-
+.tab-content p{
+    margin-bottom: 20px;
+}
 .book{
     border-radius: 80px 80px 0px 0px;
     background: #00066E;
@@ -596,7 +597,6 @@ h1 span{
 }
 .book__info{
     color: var(--white);
-    /* margin-bottom: 217px; */
 }
 .book__info-title{
     font-size: 32px;
@@ -644,6 +644,7 @@ h1 span{
     padding: 10px 40px;
     width: 100%;
     border: 1px solid transparent;
+    cursor: pointer;
 }
 .form-group {
   position: relative;
