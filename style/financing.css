@@ -6,6 +6,7 @@
 .financing__top img{
     /* max-width: 560px; */
     width: 100%;
+    border-radius: 65px;
 }
 .financing__top-content .about__paragraph{
     color: var(--white);
@@ -30,7 +31,7 @@
     max-width: 100%;
     object-fit: cover;
     min-height: 260px;
-    border-radius: 30px 30px 0 0;
+    border-radius: 26px 26px 0 0;
 }
 .financing__card-content{
     display: flex;
@@ -71,7 +72,10 @@
 .call-title{
     font-size: 24px;
     color: var(--white);
-    max-width: 577px;
+    max-width: 600px;
+    font-weight: 700;
+    line-height: normal;
+    text-transform: uppercase;
 }
 .call-content{
     display: flex;
@@ -115,6 +119,7 @@
     line-height: normal;
     text-transform: uppercase;
 }
+
 .choose-content:hover{
     transform: scale(1.1);
     transition: .3s ease;

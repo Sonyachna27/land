@@ -32,7 +32,6 @@
 .orange-text{
     color: var(--orange);
 }
-
 .repair__top-paragraph{
     color: var(--white);
     font-size: 16px;
@@ -76,9 +75,34 @@ grid-area: img;
     color: var(--white);
     padding: 60px;
 }
+.common__card-item{
+    font-size: 12px;
+    line-height: normal;
+}
+.common__card-list{
+    list-style-type: disc;
+    list-style-position: outside;
+    max-width: 100%;
+    padding: 0 0 0 20px;
+   
+}
 .blue-text{
     color: var(--blue);
+    /* font-size:  12px; */
+    font-weight: 700;
 }
 .repair .blue-title{
     color: var(--white);
+}
+.repair .repair__info-title{
+    color: var(--blue-black);
+}
+.common__card .blue-title{
+    margin-bottom: 22px;
+}
+.common__card-ph{
+    margin-bottom: 30px;
+}
+.repair .models__wrapper .blue-title{
+    color: var(--blue-black);
 }
