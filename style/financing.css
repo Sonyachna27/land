@@ -1,10 +1,11 @@
 .financing__top{
+        /* ` */
     background: var(--blue-black);
     margin-bottom: 140px;
 }
-.financing__img-wrap{
-    background: none;
-    padding: 0;
+.financing__top img{
+    /* max-width: 560px; */
+    width: 100%;
 }
 .financing__top-content .about__paragraph{
     color: var(--white);
@@ -12,24 +13,33 @@
 .financing__top-content .blue-title{
     color: var(--white);
 }
+.works__wrapper{
+    margin-bottom: 140px;
+}
 .works__bottom{
     display: grid;
-    grid-template-columns: repeat(3, minmax(360px, 1fr));
+    grid-template-columns: repeat(3,  1fr);
     gap: 40px;
+    width: 100%;
 }
 .financing__card{
-    margin-bottom: 140px;
     background: var(--blue-black);
     border-radius: 30px 30px 30px 30px;
+}
+.financing__card img {
+    max-width: 100%;
+    object-fit: cover;
+    min-height: 260px;
+    border-radius: 30px 30px 0 0;
 }
 .financing__card-content{
     display: flex;
     flex-direction: column;
     align-items: center;
     color: var(--white);
-    padding: 40px 40px 57px 40px;
-    
+    padding: 40px;
 }
+
 .last-card{
     padding-bottom: 40px;
 }
@@ -81,7 +91,7 @@
 }
 .choose__wrap{
     display: grid;
-    grid-template-columns: repeat(2, minmax(560px, 1fr));
+    grid-template-columns: repeat(2, 1fr);
     gap: 40px;
 }
 .choose-content{
@@ -89,7 +99,7 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    padding: 60px 100px;
+    padding: 60px 0;
     width: 100%;
     gap: 30px;
     background: #F4F7FF;
@@ -108,4 +118,40 @@
 .choose-content:hover{
     transform: scale(1.1);
     transition: .3s ease;
+}
+
+@media  screen and (max-width:990px) {
+    .choose__wrap {
+        gap: 20px;
+    }
+    .call__wrap{
+      flex-direction: column;
+    align-items: flex-start;
+    gap: 20px;  
+    padding: 40px 20px;
+    }
+    .works__wrapper{
+        margin-bottom: 70px;
+    }
+}
+@media  screen and (max-width:870px) {
+    .financing__card-content{
+        padding: 40px 20px;
+    }
+    .call-content {
+        max-width: 100%;
+    }
+}
+@media  screen and (max-width:640px) {
+    .works__bottom{
+        grid-template-columns: 1fr;
+    }
+    .choose__wrap{
+        grid-template-columns: 1fr;
+    }
+    .call__btn {
+        max-width: 100%;
+        
+    }
+    
 }
